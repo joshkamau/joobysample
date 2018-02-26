@@ -16,16 +16,19 @@ public class App extends Jooby {
     
     get("/process-string", req -> {
     	StringForm form = req.params().to(StringForm.class);
+    	//handle validation here
     	return "reached here";
     });
     
     get("/process-date", req -> {
     	DateForm form = req.params().to(DateForm.class);
+    	//Handle validation  here
     	return "reached here";
     });
     
     get("/process-bd", req -> {
     	BigDecimalForm form = req.params().to(BigDecimalForm.class);
+    	//Handle validation here
     	return "reached here";
     });
   }
